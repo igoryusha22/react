@@ -4,5 +4,5 @@
   NPM_FLAGS = "--version" # prevent Netlify npm install
 
 [build]
-  publish = "docs/.vitepress/dist"
+  publish = "dist"
   command = "npx pnpm i --store=node_modules/.pnpm-store && npm run build"
