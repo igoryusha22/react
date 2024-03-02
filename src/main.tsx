@@ -2,9 +2,16 @@ import React, { useState } from "react";
 import "./main.css";
 import reactLogo from "./assets/react.svg";
 import FarmLogo from "./assets/logo.png";
+
+import { useGetPostsQuery } from './app/services/posts';
+
 export function Main() {
   const [count, setCount] = useState(0);
 
+  const { data } = useGetPostsQuery(); 
+
+  console.log(data);
+  
   return (
     <>
       <div>
