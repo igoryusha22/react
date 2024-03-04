@@ -1,15 +1,16 @@
-import {Provider} from 'react-redux';
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { Main } from './main';
-import { store } from './store';
-import './index.css'
+import { Provider } from "react-redux";
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { Main } from "./main";
+import { store } from "./store";
 
-const container = document.querySelector('#root');
+import "./index.css";
+
+const container = document.querySelector("#root");
 const root = createRoot(container);
 
 root.render(
-    <Provider store={store}>
-        <Main />
-    </Provider>
+  <Provider store={store}>
+    <Main />
+  </Provider>,
 );
